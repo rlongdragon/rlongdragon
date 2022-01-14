@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>阿龍龍的網頁</title>
+        <link rel="stylesheet" href="style.css" /><!--引入style檔案-->
+
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            window.onload = function(){
+                $(".updete tr:even td").css("backgroundColor", "rgb(173, 223, 255)")
+                $(".updete tr:first td").css("backgroundColor", "lightskyblue")
+            }
+        </script>
+    </head>
+    <body style="background-color: rgb(255, 210, 125);margin: 0px;height: 5000px;">
+        <div class="header" style="padding-left: 10px;" ><!--頁首-->
+            <div>
+                <div class="box1">
+                    <img src="picture/選單.png" style="height: 40px;width: 40px;"/>
+                </div>
+                <div class="box2">
+                    <b style="margin-top: 0px;font-size: 25px;">阿龍龍的網頁</b> 
+                </div>
+                
+            </div>
+            <div style="position: relative;left: 40px;" class="link">
+                <a href="MoleComputer.html">莫耳濃度計算機</a>
+                <a href="about.html">關於我們</a>
+            </div>
+        </div>
+        <div style="margin: 10px 0px 10px 10px;width: 1000px;"><!--頁央-->
+            <div class="content">
+                <div class="box1" style="background-color: palegreen;overflow-y: auto;overflow-x: auto;width: 500px;height: 300px;">
+                    <p style="background-color: lemonchiffon;width: auto;margin: 5px 0px 0px 0px ;font-weight: bold;">更新日誌</p>
+                    <table class="updete" width=400 style="color: red;background-color: lightblue;width: 800px;">
+                        <tr style="background-color: lightskyblue;;">
+                            <td style="width: 83.825px;height: 21.600px;">日期</td>
+                            <td style="width: 400px;">更新內容</td>
+                            <td style="width: 94.300px;">更新人員</td>
+                            <td>備註</td>
+                        </tr>
+                        <tr>
+                            <td>2021/12/19</td>
+                            <td>莫耳濃度計算機更新</td>
+                            <td>阿龍</td>
+                            <td>濃度部分&約分公式
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2021/12/18</td>
+                            <td>莫耳濃度計算機更新</td>
+                            <td>阿龍</td>
+                            <td>無</td>
+                        </tr>
+                        <tr>
+                            <td>2021/12/12</td>
+                            <td>主頁更新</td>
+                            <td>阿龍</td>
+                            <td>無</td>
+                        </tr>
+                    
+                    </table>
+                </div>
+                <div class="box2">box2</div>
+                <div class="box3">box3</div>
+            </div>
+        </div>
+        <div class="footer"><!--頁尾-->
+            <p>本網頁原始碼免費開放一切教育使用</p>
+        </div>
+        <script src="jquery-3.6.0.min.js">
+            $("table, updete tr: odd");
+
+        </script>
+    </body>
+</html>

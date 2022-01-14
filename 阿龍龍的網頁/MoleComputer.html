@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>阿龍龍的網頁</title>
+        <link rel="stylesheet" href="style.css" /><!--引入style檔案-->
+        <style>
+            input{
+                width: 50px;
+                height: 25px;
+                margin: 10px 10px 10px 0px;
+                font-size: 10px;
+            }
+            .ans p{
+                font-size: 15px;
+                color: rgb(255, 217, 0);
+                margin-left: 10px;
+                display: inline;
+            }
+            .input p{
+                font-size: 10px;
+                color: rgb(75, 75, 75);
+                margin: 0px;
+                display: inline;
+            }
+        </style>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            $(function(){
+                $("input").mouseover(function(){
+                    this.style.background = "rgb(206,206,206)"
+                });
+                $("input").mouseout(function(){
+                    this.style.background = "white"
+                });
+            });
+        </script>
+    </head>
+    <body style="background-color: rgb(255, 210, 125);margin: 0px;" >
+        <div class="header" style="padding-left: 10px;" ><!--頁首-->
+            <div>
+                <div class="box1">
+                    <img src="picture/選單.png" style="height: 40px;width: 40px;"/>
+                </div>
+                <div class="box2">
+                    <a href="index.html" style="margin-top: 0px;font-size: 25px;color: orangered; text-decoration:none ;border: none;font-weight: bold;padding: 0px;">阿龍龍的網頁</a>
+                </div>
+                
+            </div>
+            <div style="position: relative;left: 40px;" class="link">
+                <a href="MoleComputer.html">莫耳濃度計算機</a>
+                <a href="about.html">關於我們</a>
+            </div>
+        </div>
+        <div class="concent"><!--頁央-->
+            <div style="margin: 0px; background-color: lightblue;"><!--公式-->
+                <div style="position: relative;left: 20px;top: 20px;margin: auto;">
+                    <p style="color: rgb(12, 108, 168);margin: 0px; font-weight: bold;font-size: 20px;">體積莫耳濃度公式</p>
+                    <img src="picture/體積莫耳濃度公式-removebg-preview.png" style="height: 100px;width: auto;margin: 20px 20px 40px 20px;">
+                </div>
+            </div>
+            <div id="computer" style="border: solid 8px rgb(255, 255, 61); margin: 5px auto;background-color: lightyellow;width: 780px;"><!--計算機-->
+                <div>
+                    <p style="color: rgb(255, 217, 0);font-weight: bolder;font-size: 20px;margin-left: 10px;">體積莫耳濃度計算機</p>
+                    <div class="input">
+                        <p style="margin-left: 10px;">濃度</p><input id="Concentration" type="text" placeholder="M" value="">
+                        <p>溶質重</p><input id="Solute_weight" type="text" placeholder="g" value="">
+                        <p>分子量</p><input id="Molecular_weight" type="text" placeholder="amu" value="">
+                        <p>溶液體積</p><input id="Solution_volume" type="text" placeholder="ml" value="">
+                        <p>溶液密度</p><input id="Solution_density" type="text" placeholder="g/ml" value="">
+                        <p>溶液重</p><input id="Solution_weight" type="text" placeholder="g" value="">
+                        <p>溶劑重</p><input id="Solvent_weight" type="text" placeholder="g" value="" ><br>
+                        <input style="margin-left: 10px;width: auto;" type="button" value="完成按我" onclick="math()" style="width: auto;" >
+                    </div>
+                    <div>
+                        <from>
+                            
+                        </from>
+                    </div>
+                </div>
+                <div>
+                    <p style="color: rgb(255, 217, 0);font-weight: bolder;font-size: 20px;margin-left: 10px;">計算結果</p>
+                    <div class="ans">
+                        <p>濃度    :  </p><p id="ans-Concentration"></p><br>
+                        <p>溶質重  :  </p><p id="ans-Solute_weight"></p><br>
+                        <p>分子量  :  </p><p id="ans-Molecular_weight"></p><br>
+                        <p>溶液體積:  </p><p id="ans-Solution_volume"></p><br>
+                        <p>溶液密度:  </p><p id="ans-Solution_density"></p><br>
+                        <p>溶液重  :  </p><p id="ans-Solution_weight"></p><br>
+                        <p>溶劑重  :  </p><p id="ans-Solvent_weight"></p><br>
+                    </div>
+                </div>
+                <script src="MoleComputer.js">
+
+                </script><!--運算部分-->
+            </div>
+
+        </div>
+        <div class="footer"><!--頁尾-->
+            <p>本網頁原始碼免費開放一切教育使用</p>
+        </div>
+    </body>
+</html>

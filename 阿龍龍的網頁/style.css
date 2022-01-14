@@ -1,0 +1,48 @@
+.header{
+    color: orangered;
+    background-color: orange;
+    margin: 0px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.header div {
+    display: flex;
+}
+.header a{
+    border: solid orangered 2px;
+    padding: 5px;
+}
+.header a:hover{
+    border: dashed green 2px;
+}
+.link a{
+    margin-right: 8px;
+}
+
+.content{
+    display: flex;
+}
+.content div{
+    border: solid black 1px;
+    padding: 10px;
+}
+.box1{
+    order: 1;
+}
+.box2{
+    order: 2;
+}
+.box3{
+    order: 3;
+}
+
+.td tr td{
+    background-color: rgb(169, 223, 255);
+}
+
+.footer{
+    color: orangered;
+    background-color: orange;
+    margin: 0px;
+    padding: 20px;
+}
