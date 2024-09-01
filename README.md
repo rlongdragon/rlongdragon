@@ -1,14 +1,11 @@
 
 ### Hi 我龍 ![](https://komarev.com/ghpvc/?username=rlongdragon&color=green&style=flat-square)
 
-現在高三特選海大
-
+現在就讀海大 :D
 
 主要做網路應用程式，喜歡接觸不同領域:)
 
-
 希望有機會可以接觸手機應用程式開發、遊戲製作、minecraft模組開發
-
 
 正在學網頁框架
 
